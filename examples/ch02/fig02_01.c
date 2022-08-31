@@ -1,12 +1,29 @@
 // Fig. 2.1: fig02_01.c
-// A first program in C 
+// A first program in C
 #include <stdio.h>
 
-// function main begins program execution 
+// function main begins program execution
 int main( void )
 {
-   printf( "Welcome to C!\n" );
-} // end function main 
+    int length = 0;
+    int width = 0;
+    int area = 0;
+    int quotient = 0;
+
+    puts("Enter the length:");
+    scanf("%d", &length);
+    puts("Enter the width:");
+    scanf("%d", &width);
+
+    area = length * width;
+
+    printf("Length: %d, Width: %d, Area: %d\n", length, width, area);
+
+    quotient = length / width;
+
+    printf("Result of Length divided by Width: %d\n", quotient);
+    return 0;
+} // end function main
 
 
 /**************************************************************************
